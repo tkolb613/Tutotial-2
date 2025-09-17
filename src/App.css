@@ -42,19 +42,38 @@
 }
 
 .Card-Component{
-  border:lightblue 2px solid;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 0 20px;
+  border:rgb(30, 171, 218) 2px solid;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 0 50px;
   align-items: center;
 }
 
 .main-container {
-border: white 2 px solid;
+border: white 2px solid;
 border-radius: 10px;
-padding: 50px;
+padding: 20px;
 display: flex;
-width: 10px;
-justify-content: space-around;
+width: 750px;
+justify-content: space-between;
 align-items: center;
+}
+
+.Card-Sale{
+  color: red;
+}
+
+.Card-Sale-Glow{
+  box-shadow: 0 0 10px 5px #61dafbaa;
+}
+
+@media screen and (max-width:600px) {
+  .main-container{
+    flex-direction: column;
+    width: 300px;
+  }
+  .Card-Component {
+    width: 90%;
+    margin: 10px;
+  }
 }
